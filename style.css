@@ -1,0 +1,623 @@
+.logo {
+  width: 10%;
+  cursor: pointer;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.navbar ul li:hover {
+  animation: shake 0.4s;
+}
+#main-div1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    rgba(80, 22, 195, 0.721),
+    rgba(95, 62, 62, 0.507)
+  );
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#content div {
+  height: 200px;
+  text-align: center;
+  z-index: 1;
+}
+#content div h1 {
+  font-size: 100px;
+  color: white;
+  z-index: 1;
+  font-weight: bold;
+}
+
+#main-div2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 10%;
+}
+#main-div2 h1 {
+  font-size: 30px;
+}
+#main-div2 p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  color: white;
+  background-color: #2c2a58;
+  text-align: center;
+  font-size: 40px;
+  width: 100% !important;
+  display: flex;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 2%;
+}
+
+.footer-spam {
+  opacity: 0.5;
+  color: #bd9c6c;
+}
+footer div ul a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+footer div ul {
+  list-style-type: none;
+}
+footer div ul a:hover {
+  text-decoration: underline;
+  color: #bd9c6c;
+}
+
+/* About Page */
+#about-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#about-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#about-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#about-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#about-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* Contact Page */
+#contact-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#contact-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10%;
+}
+#contact-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 80px;
+  text-align: center;
+}
+#contact-main-div2 p {
+  font-size: 60px;
+  text-align: justify;
+}
+
+/* admission Page */
+#admission-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#admission-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#admission-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#admission-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#admission-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* faq Page */
+#faq-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#faq-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#faq-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10%;
+}
+#faq-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#faq-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* undergraduate Page */
+#undergraduate-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#undergraduate-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#undergraduate-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#undergraduate-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#undergraduate-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*graduate Page */
+#graduate-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#graduate-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#graduate-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#graduate-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#graduate-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* alumni Page */
+#alumni-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#alumni-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#alumni-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#alumni-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#alumni-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* staff Page */
+#staff-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#staff-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#staff-main-div2 {
+  text-align: justify;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#staff-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#staff-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* resources Page */
+#resources-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#resources-main-div1 h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#resources-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#resources-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#resources-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+#resources-main-div1 h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#resources-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#resources-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#resources-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* scholarship page */
+#scholarship-main-div1 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(6, 23, 117, 0.768),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("under_grad_main - Copy (2).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#scholarship-main-div1 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  margin-left: 40%;
+}
+#scholarship-main-div2 {
+  text-align: justify;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+#scholarship-main-div2 h1 {
+  color: #3e3b82;
+  font-size: 24px;
+  text-align: center;
+}
+#scholarship-main-div2 p {
+  font-size: 20px;
+  text-align: justify;
+}
