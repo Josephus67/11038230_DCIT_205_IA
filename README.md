@@ -4,6 +4,11 @@ Author:
 Name: Bawah Josephus
 Student ID: 11038230
 
+Screenshots
+https://github.com/Josephus67/11038230_DCIT_205_IA/blob/main/Screenshot%202023-11-28%20104420.png
+https://github.com/Josephus67/11038230_DCIT_205_IA/blob/main/Screenshot%202023-11-28%20104521.png
+https://github.com/Josephus67/11038230_DCIT_205_IA/blob/main/Screenshot%202023-11-28%20104612.png
+https://github.com/Josephus67/11038230_DCIT_205_IA/blob/main/Screenshot%202023-11-28%20104643.png
 
 
 Thank you for exploring my website. Should you have any questions or feedback, please feel free to reach out.
